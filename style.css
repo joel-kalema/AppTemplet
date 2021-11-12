@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+/* General Styles */
+
+:root {
+
+   --bg-color: rgb(186,192,198);
+   --bg-gradient: linear-gradient(95deg, rgba(186,192,198,1) 0%, 
+   rgba(169,176,181,1) 35%, rgba(137,145,151,1) 70%, rgba(105,113,121,1) 100%);
+   --bg-gradient-glass: linear-gradient(95deg, rgba(186,192,198,0.6) 0%, 
+   rgba(169,176,181,0.6) 35%, rgba(137,145,151,0.6) 70%, rgba(105,113,121,0.15) 100%);
+   
+   --text-color: #FAFAFA;
+   
+   --fs-h1: 3em;
+   --fs-h2: 1.8em;
+   --fs-h3: 1.5em;
+   --fs-text: 1.05em;
+   
+}
+
+.body {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0;
+   padding: .725em .725em;
+   background: #FFF;
+}
+
+.main {
+   background: var(--bg-color);
+   background: var(--bg-gradient);
+   width: 100%;
+   height: auto;
+   padding: 2em auto;
+   border-radius: .5em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#id {
+   position: absolute;
+   align-self: center;
+   justify-self: center;
+   background: #f00;
+   height: 100px;
+   width: 100px;
+   bottom: 0;
+   left: 0;
+   margin-bottom: 0;
+   margin-left: 0;
+}
+
+.section {
+   width: 80%;
+   height: 60vh; /* Temporary value, delete and change by "auto" when child elements are added*/
+   border-radius: 1em;
+   background: var(--bg-gradient-glass), transparent;
+   background-blend-mode: multiply;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   margin: 0;
+   padding: 3em auto;
+   border-top-style: outset;
+   border-left-style: outset;
+}
+
+.boxes {
+   /* Giving all possible boxes a shadow */
+   box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
+   -webkit-box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
+   -moz-box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
+}
