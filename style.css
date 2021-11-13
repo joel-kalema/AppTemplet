@@ -22,62 +22,41 @@
    --fs-text: 1.05em;
    
 }
-
-.body {
-   width: 100vw;
+body{
+   position: relative;
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0;
-   padding: .725em .725em;
-   background: #FFF;
-}
-
-.main {
-   background: var(--bg-color);
-   background: var(--bg-gradient);
-   width: 100%;
-   height: auto;
-   padding: 2em auto;
-   border-radius: .5em;
-   display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(170, 170, 170);
+   width: 100%;
+   height: 100vh;
+}
+main{
+   width: 80%;
+   height: 80vh;
+   background: linear-gradient(to right bottom,                 
+               rgba(225, 225, 225, 0.1),                                
+               rgba(128, 78, 78, 0.1)
+               );
+   backdrop-filter: blur(3rem);
+   border-top: 1px#ffffffc2 solid;
+   border-left: 1px#ffffffc2 solid;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   box-shadow: 17px 16px 52px 5px rgba(0, 0, 0, 0.274);
+   -webkit-box-shadow: 17px 16px 52px 5px rgba(0, 0, 0, 0.267);
+   -moz-box-shadow: 17px 16px 52px 5px rgba(0, 0, 0, 0.233);
 }
 
-#id {
+img{
+   width: 150px;
+   z-index: 3;
    position: absolute;
-   align-self: center;
-   justify-self: center;
-   background: #f00;
-   height: 100px;
-   width: 100px;
    bottom: 0;
    left: 0;
-   margin-bottom: 0;
-   margin-left: 0;
-}
-
-.section {
-   width: 80%;
-   height: 60vh; /* Temporary value, delete and change by "auto" when child elements are added*/
-   border-radius: 1em;
-   background: var(--bg-gradient-glass), transparent;
-   background-blend-mode: multiply;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: center;
-   margin: 0;
-   padding: 3em auto;
-   border-top-style: outset;
-   border-left-style: outset;
-}
-
-.boxes {
-   /* Giving all possible boxes a shadow */
-   box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
-   -webkit-box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
-   -moz-box-shadow: 17px 16px 52px 5px rgba(0,0,0,0.4);
 }
