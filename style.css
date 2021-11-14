@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
 *,
 *::after,
 *::before {
@@ -23,18 +24,22 @@
    
 }
 body{
+   font-family: 'Poppins', sans-serif;
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
    margin: 0;
    padding: 0;
-   background-color: rgb(170, 170, 170);
+   background-color: rgb(163, 169, 175);
    width: 100%;
+   color: #fafafab4;
    height: 100vh;
 }
 main{
-   width: 80%;
+   position: relative;
+   display: flex;
+   width: 70%;
    height: 80vh;
    background: linear-gradient(to right bottom,                 
                rgba(225, 225, 225, 0.1),                                
@@ -59,4 +64,107 @@ img{
    position: absolute;
    bottom: 0;
    left: 0;
+}
+.btn{
+   position: absolute;
+   width: 100px;
+   height: 40px;
+   bottom: 30px;
+   left: 20px;
+   background-color: #fff;
+   border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
+}
+
+main nav{
+   width: 15%;
+}
+
+nav .icon{
+   width: 30px;
+   height: 30px;
+   margin: 40px auto;
+   background-color: rgba(255, 255, 255, 0.589);
+   border-radius: 6px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+}
+
+main .body{
+   width: 55%;
+}
+.body-title{
+   font-size: 25px;
+}
+.button{
+   text-align: center;
+   width: 150px;
+   padding: 5px;
+   background-color: rgba(255, 255, 255, 0.493);
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+.works{
+   display: flex;
+   justify-content: space-around;
+}
+.numbers{
+   font-size: 40px;
+   margin: 0;
+   padding: 0;
+}
+.works_table{
+   width: 30%;
+}
+.form{
+   width: 100%;
+   height: 100px;
+   background-color: rgba(255, 255, 255, 0.493);
+}
+
+main .side-bar{
+   width: 40%;
+   display: block;
+   margin: 40px auto;
+}
+
+.recherche{
+   display: flex;
+}
+.rech-bar{
+   width: 50%;
+   height: 35px;
+   margin-left: 20px;
+   background-color: rgba(255, 255, 255, 0.493);
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+.rech-icons{
+   margin-left: 13px;
+   width: 30px;
+   height: 30px;
+   background-color: rgba(255, 255, 255, 0.493);
+}
+.statistics{
+   width: 75%;
+   height: 170px;
+   background-color: rgba(255, 255, 255, 0.493);
+   margin-top: 40px;
+   margin-left: 20px;
+   border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -ms-border-radius: 7px;
+   -o-border-radius: 7px;
 }
